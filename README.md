@@ -29,7 +29,9 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
     ```sh
     bash root.sh
     ```
-
+3. Run
+    ```cd freeroot && ROOTFS_DIR=$(pwd)
+$ROOTFS_DIR/usr/local/bin/proot --rootfs="$ROOTFS_DIR" -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit```
 ## Supported Architectures
 
 - x86_64 (amd64)
